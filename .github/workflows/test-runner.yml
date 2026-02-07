@@ -1,4 +1,4 @@
-name: Test Runner PEC6
+name: Test Runner Local PEC6
 
 on:
   push:
@@ -7,8 +7,8 @@ on:
 
 jobs:
   test:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - uses: actions/checkout@v4
-      - name: Mensaje de prueba
-        run: echo "GitHub Actions funcionando"
+      - name: Prueba runner local
+        run: echo "Este job se ejecuta en mi PC local"
